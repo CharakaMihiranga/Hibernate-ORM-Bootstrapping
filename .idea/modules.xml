@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/Hibernate-Crud/Hibernate-Crud.iml" filepath="$PROJECT_DIR$/Hibernate-Crud/Hibernate-Crud.iml" />
       <module fileurl="file://$PROJECT_DIR$/Hibernate-ORM-Bootstrapping.iml" filepath="$PROJECT_DIR$/Hibernate-ORM-Bootstrapping.iml" />
     </modules>
   </component>

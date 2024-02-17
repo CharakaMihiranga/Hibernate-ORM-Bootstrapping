@@ -1,12 +1,13 @@
 package lk.ijse.config;
 
-import lk.ijse.AppInitializer;
 import lk.ijse.entity.Customer;
+import org.hibernate.Session;
 import org.hibernate.SessionFactory;
-import org.hibernate.boot.Metadata;
-import org.hibernate.boot.MetadataSources;
-import org.hibernate.boot.registry.StandardServiceRegistry;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
+import org.hibernate.cfg.Configuration;
+
+import java.io.IOException;
+import java.io.InputStream;
+import java.util.Properties;
 
 public class SessionFactoryConfig {
 
@@ -15,20 +16,31 @@ public class SessionFactoryConfig {
 
     private SessionFactoryConfig(){
 
-        //Create Session factory through native bootstrapping
+        try{
 
-        // 1.Create a service registry
-        StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-                .configure()
-                .build();
+            Properties properties = new Properties();
+            InputStream inputStream = SessionFactoryConfig.class.getClassLoader().getResourceAsStream("hibernate.properties");
+            properties.load(inputStream);
 
-        // 2.Creates a Metadata Object
-        Metadata metadata = new MetadataSources(serviceRegistry)
-                .addAnnotatedClass(Customer.class)
-                .getMetadataBuilder()
-                .build();
+            Configuration configuration = new org.hibernate.cfg.Configuration();
+            configuration.setProperties(properties);
 
-        // 3.Creates a Session Factory
+            configuration.addAnnotatedClass(Customer.class);
+            sessionFactory = configuration.buildSessionFactory();
+
+
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
 
     }
+
+    public static SessionFactoryConfig getInstance() throws IOException {
+        return factoryConfig == null ? new SessionFactoryConfig() : factoryConfig;
+    }
+
+    public Session getSession(){
+        return sessionFactory.openSession();
+    }
+
 }

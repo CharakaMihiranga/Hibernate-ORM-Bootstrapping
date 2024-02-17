@@ -1,0 +1,23 @@
+#btnSave:hover {
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(three-pass-box, #40ce62, 10, 0.7, 0, 0);
+    -fx-transition-duration: 0.2s;
+}
+
+#btnUpdate:hover {
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(three-pass-box, #ffc107, 10, 0.7, 0, 0);
+    -fx-transition-duration: 0.2s;
+}
+
+#btnDelete:hover {
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-effect: dropshadow(three-pass-box, #e53935, 10, 0.7, 0, 0);
+    -fx-transition-duration: 0.2s;
+}
