@@ -78,7 +78,7 @@ public class CustomerModel {
         }
     }
 
-    public void deleteCustomer(int id ){
+    public boolean deleteCustomer(int id ){
        try {
            Session deleteSession =
                    SessionFactoryConfig.getInstance().getSession();
@@ -96,5 +96,6 @@ public class CustomerModel {
        } catch (IOException e) {
            throw new RuntimeException(e);
        }
+        return false;
     }
 }

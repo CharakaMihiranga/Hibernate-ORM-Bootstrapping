@@ -18,7 +18,9 @@ public class Customer {
     private int moNumber;
 
     public Customer(){}
-    public Customer(String name, String address, String mobile) {
+
+    public Customer(int id,String name, String address, String mobile) {
+        this.id = id;
         this.name = name;
         this.address = address;
         this.moNumber = Integer.parseInt(mobile);

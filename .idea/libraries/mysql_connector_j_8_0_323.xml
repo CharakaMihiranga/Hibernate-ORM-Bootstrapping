@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="mysql-connector-j-8.0.323">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/lib/mysqlConnector/mysql-connector-j-8.0.32.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
