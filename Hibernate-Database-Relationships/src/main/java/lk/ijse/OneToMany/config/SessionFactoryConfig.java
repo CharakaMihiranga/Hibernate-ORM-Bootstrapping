@@ -1,6 +1,7 @@
 package lk.ijse.OneToMany.config;
 
-import lk.ijse.OneToMany.entity.CustomerOneToMany;
+import lk.ijse.OneToMany.entity.Customer;
+import lk.ijse.OneToMany.entity.Order;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
@@ -44,7 +45,8 @@ public class SessionFactoryConfig {
 
          sessionFactory = new Configuration()
                 .configure()
-                .addAnnotatedClass(CustomerOneToMany.class)
+                .addAnnotatedClass(Customer.class)
+                .addAnnotatedClass(Order.class)
                 .buildSessionFactory();
 
     }

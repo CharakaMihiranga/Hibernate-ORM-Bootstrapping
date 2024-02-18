@@ -2,7 +2,7 @@ package lk.ijse.OneToMany;
 
 
 import lk.ijse.OneToMany.config.SessionFactoryConfig;
-import lk.ijse.OneToMany.entity.CustomerOneToMany;
+import lk.ijse.OneToMany.entity.Customer;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
@@ -22,7 +22,7 @@ public class AppInitializer {
 
             Transaction transaction = session.beginTransaction();
 
-            CustomerOneToMany customer = new CustomerOneToMany();
+            Customer customer = new Customer();
 
             customer.setId(1);
             customer.setName("Charaka V Mihiranga");

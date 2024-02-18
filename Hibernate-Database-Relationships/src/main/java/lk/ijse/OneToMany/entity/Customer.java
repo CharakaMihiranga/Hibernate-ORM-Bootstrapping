@@ -1,11 +1,13 @@
 package lk.ijse.OneToMany.entity;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Entity
 @Table(name = "customer")
-public class CustomerOneToMany {
+public class Customer {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,11 +20,26 @@ public class CustomerOneToMany {
     @Column(name = "customer_address")
     private String address;
 
-    public CustomerOneToMany(){
+
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "customer")
+    private List<Order> orders = new ArrayList<>();
+
+    @Override
+    public String toString() {
+        return "Customer{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", address='" + address + '\'' +
+                ", orders=" + orders +
+                '}';
+    }
+
+    public Customer(){
 
     }
 
-    public CustomerOneToMany(int id, String name, String address) {
+    public Customer(int id, String name, String address) {
         this.id = id;
         this.name = name;
         this.address = address;
@@ -50,15 +67,6 @@ public class CustomerOneToMany {
 
     public void setAddress(String address) {
         this.address = address;
-    }
-
-    @Override
-    public String toString() {
-        return "CustomerOneToMany{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", address='" + address + '\'' +
-                '}';
     }
 
 }
