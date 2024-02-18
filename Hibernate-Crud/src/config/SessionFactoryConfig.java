@@ -15,23 +15,35 @@ public class SessionFactoryConfig {
 
     private SessionFactoryConfig(){
 
-        //create Session factory through native bootstrapping
+//        //create Session factory through native bootstrapping
+//
+//
+//        //1.create a service registry
+//        StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
+//                .configure()
+//                .build();
+//
+//        //2. Creates a Metadata Object
+//        Metadata metadata = new MetadataSources(serviceRegistry)
+//                .addAnnotatedClass(Customer.class)
+//                .getMetadataBuilder()
+//                .build();
+//
+//        //3. Creates a Session Factory
+//
+//        sessionFactory = metadata.buildSessionFactory();
 
 
-        //1.create a service registry
-        StandardServiceRegistry serviceRegistry = new StandardServiceRegistryBuilder()
-                .configure()
-                .build();
+        // 02/18 -- > Create a sessionFactory using Configuration
 
-        //2. Creates a Metadata Object
-        Metadata metadata = new MetadataSources(serviceRegistry)
+        sessionFactory = new MetadataSources(
+                new StandardServiceRegistryBuilder()
+                        .configure()
+                        .build())
                 .addAnnotatedClass(Customer.class)
                 .getMetadataBuilder()
-                .build();
-
-        //3. Creates a Session Factory
-
-        sessionFactory = metadata.buildSessionFactory();
+                .build()
+                .buildSessionFactory();
 
 
     }

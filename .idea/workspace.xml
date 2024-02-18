@@ -4,60 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Crud/src/note/HIbernate-XML-Configuration.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/controller/CustomerFormController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/model/CustomerModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/note/Hibernate-Property-file-Configuration" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/assets/Add User Male.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/assets/Customer survey form.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/assets/Delete.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/assets/Update Tag.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/assets/search.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/styles/button.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/view/CustomerForm.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/antlr_2_7_7.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/mysql_connector_j_8_0_32.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="Hibernate with javafx crud completed">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Crud/Hibernate-Crud.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Crud/Hibernate-Crud.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Crud/src/embedded/NameIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Crud/src/embedded/NameIdentifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-with-javafx/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/AppInitializerWrapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/AppInitializerWrapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/config/SessionFactoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/config/SessionFactoryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/java/lk/ijse/hibernate.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/AppInitializer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/AppInitializerWrapper.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/config/SessionFactoryConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/entity/Customer.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/hibernate.properties" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/hibernate.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/mysqlConnector/mysql-connector-j-8.0.32.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/FastInfoset-1.2.15.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/antlr-2.7.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/byte-buddy-1.12.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/classmate-1.5.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/hibernate-commons-annotations-5.1.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/hibernate-core-5.6.5.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/istack-commons-runtime-3.0.7.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/jandex-2.4.2.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/javax.activation-api-1.2.0.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/javax.persistence-api-2.2.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/jaxb-api-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/jaxb-runtime-2.3.1.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/jboss-logging-3.4.3.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/jboss-transaction-api_1.2_spec-1.1.1.Final.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/stax-ex-1.8.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-with-javafx/src/main/resources/lib/required/txw2-2.3.1.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Crud/src/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Crud/src/AppInitializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Crud/src/config/SessionFactoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Crud/src/config/SessionFactoryConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -99,7 +49,7 @@
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GDSE68/PROJECTS/InclassProjects/Original/Hibernate-ORM-Bootstrapping/Hibernate-with-javafx/src/main/resources/assets",
+    "last_opened_file_path": "D:/GDSE68/PROJECTS/InclassProjects/Original/Hibernate-ORM-Bootstrapping/Hibernate-Crud/src/lib/required/txw2-2.3.1.jar",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -130,7 +80,7 @@
       <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-with-javafx\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppInitializerWrapper">
+  <component name="RunManager" selected="Application.AppInitializer">
     <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="AppInitializer" />
       <module name="Hibernate-Crud" />
@@ -153,8 +103,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppInitializerWrapper" />
         <item itemvalue="Application.AppInitializer" />
+        <item itemvalue="Application.AppInitializerWrapper" />
       </list>
     </recent_temporary>
   </component>
@@ -171,8 +121,18 @@
       <workItem from="1708093234115" duration="641000" />
       <workItem from="1708139128683" duration="75000" />
       <workItem from="1708178857634" duration="5684000" />
-      <workItem from="1708188385276" duration="2971000" />
+      <workItem from="1708188385276" duration="3058000" />
+      <workItem from="1708226239481" duration="2315000" />
     </task>
+    <task id="LOCAL-00001" summary="Hibernate with javafx crud completed">
+      <option name="closed" value="true" />
+      <created>1708191434367</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1708191434367</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -180,5 +140,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="Hibernate with javafx crud completed" />
+    <option name="LAST_COMMIT_MESSAGE" value="Hibernate with javafx crud completed" />
   </component>
 </project>
