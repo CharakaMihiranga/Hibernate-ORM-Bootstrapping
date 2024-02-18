@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="Hibernate with javafx crud completed">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Crud/src/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Crud/src/AppInitializer.java" afterDir="false" />
+    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="Create session Factory object using Configuration">
       <change beforePath="$PROJECT_DIR$/Hibernate-Crud/src/config/SessionFactoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Crud/src/config/SessionFactoryConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +38,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.AppInitializer.executor": "Run",
     "Application.AppInitializerWrapper.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
@@ -122,7 +121,7 @@
       <workItem from="1708139128683" duration="75000" />
       <workItem from="1708178857634" duration="5684000" />
       <workItem from="1708188385276" duration="3058000" />
-      <workItem from="1708226239481" duration="2315000" />
+      <workItem from="1708226239481" duration="2677000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate with javafx crud completed">
       <option name="closed" value="true" />
@@ -132,7 +131,23 @@
       <option name="project" value="LOCAL" />
       <updated>1708191434367</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Create session Factory object using Configuration">
+      <option name="closed" value="true" />
+      <created>1708228859413</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1708228859413</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Create session Factory object using Configuration">
+      <option name="closed" value="true" />
+      <created>1708228884405</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1708228884405</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -141,6 +156,7 @@
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Hibernate with javafx crud completed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hibernate with javafx crud completed" />
+    <MESSAGE value="Create session Factory object using Configuration" />
+    <option name="LAST_COMMIT_MESSAGE" value="Create session Factory object using Configuration" />
   </component>
 </project>
