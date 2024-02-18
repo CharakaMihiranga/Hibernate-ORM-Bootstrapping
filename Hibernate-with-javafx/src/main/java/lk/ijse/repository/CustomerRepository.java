@@ -1,4 +1,4 @@
-package lk.ijse.OneToMany.repository;
+package lk.ijse.repository;
 
 import lk.ijse.config.SessionFactoryConfig;
 import lk.ijse.entity.Customer;
