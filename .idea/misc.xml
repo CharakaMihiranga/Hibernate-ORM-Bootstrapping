@@ -7,11 +7,13 @@
         <option value="$PROJECT_DIR$/Hibernate-with-javafx/pom.xml" />
         <option value="$PROJECT_DIR$/Hibernate-Configuration/pom.xml" />
         <option value="$PROJECT_DIR$/Hibernate-Database-Relationships/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
       <set>
         <option value="$PROJECT_DIR$/Hibernate-Configuration/pom.xml" />
+        <option value="$PROJECT_DIR$/untitled/pom.xml" />
       </set>
     </option>
   </component>

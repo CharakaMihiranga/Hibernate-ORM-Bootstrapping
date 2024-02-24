@@ -1,4 +1,4 @@
-package lk.ijse.OneToMany.entity;
+package lk.ijse.ManyToMany.entity;
 
 import org.hibernate.annotations.CreationTimestamp;
 
@@ -11,32 +11,29 @@ import java.util.List;
 @Table(name = "`orders`")
 public class Order {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "order_id")
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  @Column(name = "order_id")
     private int id;
 
-    @Column(name = "order_description")
+  @Column(name = "order_description")
     private String description;
 
-    @CreationTimestamp
+  @CreationTimestamp
     @Column(name = "order_date_time")
     private Timestamp orderDateTime;
 
-    @ManyToOne()
-    @JoinColumn(name = "customer_id")
-    private Customer customer;
+  @ManyToOne
+  @JoinColumn(name = "customer_Id")
+  private Customer customer;
+//    @ManyToMany(cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+//    private List<Item> items = new ArrayList<> ();
+
+    @OneToMany(cascade = CascadeType.ALL,fetch = FetchType.LAZY,mappedBy = "order")
+    private List<OrderDetail> orderDetails=new ArrayList<>();
 
 
-    public Order() {}
-
-    @Override
-    public String toString() {
-        return "Order{" +
-                "id=" + id +
-                ", description='" + description + '\'' +
-                ", orderDateTime=" + orderDateTime +
-                '}';
+    public Order() {
     }
 
     public Order(int id, String description, Timestamp orderDateTime) {
@@ -69,4 +66,12 @@ public class Order {
         this.orderDateTime = orderDateTime;
     }
 
+    @Override
+    public String toString() {
+        return "Order{" +
+                "id=" + id +
+                ", description='" + description + '\'' +
+                ", orderDateTime=" + orderDateTime +
+                '}';
+    }
 }

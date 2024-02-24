@@ -4,12 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="Hibernate-Database-Relationships">
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Order.java" afterDir="false" />
+    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="One to Many relationship">
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/config/SessionFactoryConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/embedd/MobileNumber.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/embedd/Name_Identifier.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/embedd/OrderDetailPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/entity/Customer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/entity/Item.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/entity/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/entity/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/hibernate.cfg.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/AppInitializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/AppInitializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/config/SessionFactoryConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/config/SessionFactoryConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/CustomerOneToMany.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Customer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Order.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-ORM-Bootstrapping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-ORM-Bootstrapping.iml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,17 +63,18 @@
     "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "Application.AppInitializer.executor": "Run",
     "Application.AppInitializerWrapper.executor": "Run",
+    "Application.AppIntializer.executor": "Run",
     "Application.lk.ijse.AppInitializer.executor": "Run",
     "Application.lk.ijse.Hibernate.AppInitializer.executor": "Run",
+    "Application.lk.ijse.ManyToMany.AppInitializer.executor": "Run",
     "Application.lk.ijse.OneToMany.AppInitializer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "ignore.virus.scanning.warn.message": "true",
     "jdk.selected.JAVA_MODULE": "21",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/GDSE68/PROJECTS/InclassProjects/Original/Hibernate-ORM-Bootstrapping/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/lib/required/txw2-2.3.1.jar",
+    "last_opened_file_path": "D:/GDSE68/Java Projects/InclassProjects/Working/Hibernate-ORM-Bootstrapping/Hibernate-Database-Relationships/src/main/java/ManyToMany",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -80,26 +95,23 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\GDSE68\Java Projects\InclassProjects\Working\Hibernate-ORM-Bootstrapping\Hibernate-Database-Relationships\src\main\java\ManyToMany" />
+      <recent name="D:\GDSE68\Java Projects\InclassProjects\Working\Hibernate-ORM-Bootstrapping\Hibernate-Database-Relationships\src\main\java\lk\ijse\ManyToMany\entity" />
+      <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-Database-Relationships\src\main\java\lk\ijse\ManyToMany" />
       <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-Database-Relationships" />
       <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-Database-Relationships\src\main\java\lk\ijse" />
-      <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-Configuration\src\main\java\lk\ijse\Hibernate-Configuration" />
-      <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-with-javafx\src\main\resources\assets" />
-      <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-Crud\src\note" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-Database-Relationships\src\main\java\lk\ijse" />
       <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-Database-Relationships\src\main\resources" />
       <recent name="D:\GDSE68\PROJECTS\InclassProjects\Original\Hibernate-ORM-Bootstrapping\Hibernate-with-javafx\src\main\resources" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lk.ijse.ManyToMany.embedded" />
+      <recent name="lk.ijse.ManyToMany" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.lk.ijse.OneToMany.AppInitializer">
-    <configuration name="AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="AppInitializer" />
-      <module name="Hibernate-Crud" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.AppIntializer">
     <configuration name="AppInitializerWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ijse.AppInitializerWrapper" />
       <module name="Hibernate-with-javafx" />
@@ -113,12 +125,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="AppIntializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.AppIntializer" />
+      <module name="Hibernate-Database-Relationships" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.ManyToMany.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="lk.ijse.Hibernate.AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="lk.ijse.Hibernate.AppInitializer" />
       <module name="Hibernate-Configuration" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="lk.ijse.Hibernate.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="lk.ijse.ManyToMany.AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.AppInitializer" />
+      <module name="Hibernate-Database-Relationships" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lk.ijse.ManyToMany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -141,10 +179,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AppIntializer" />
         <item itemvalue="Application.lk.ijse.OneToMany.AppInitializer" />
+        <item itemvalue="Application.lk.ijse.ManyToMany.AppInitializer" />
         <item itemvalue="Application.AppInitializerWrapper" />
         <item itemvalue="Application.lk.ijse.Hibernate.AppInitializer" />
-        <item itemvalue="Application.AppInitializer" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +201,10 @@
       <workItem from="1708139128683" duration="75000" />
       <workItem from="1708178857634" duration="5684000" />
       <workItem from="1708188385276" duration="3058000" />
-      <workItem from="1708226239481" duration="15185000" />
+      <workItem from="1708226239481" duration="18354000" />
+      <workItem from="1708248015445" duration="1486000" />
+      <workItem from="1708673880621" duration="375000" />
+      <workItem from="1708776207873" duration="4002000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate with javafx crud completed">
       <option name="closed" value="true" />
@@ -212,7 +254,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708238417825</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="One to Many relationship">
+      <option name="closed" value="true" />
+      <created>1708244926350</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1708244926350</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -223,6 +273,18 @@
     <MESSAGE value="Hibernate with javafx crud completed" />
     <MESSAGE value="Create session Factory object using Configuration" />
     <MESSAGE value="Hibernate-Database-Relationships" />
-    <option name="LAST_COMMIT_MESSAGE" value="Hibernate-Database-Relationships" />
+    <MESSAGE value="One to Many relationship" />
+    <option name="LAST_COMMIT_MESSAGE" value="One to Many relationship" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
