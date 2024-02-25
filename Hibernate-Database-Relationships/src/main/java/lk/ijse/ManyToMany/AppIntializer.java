@@ -3,6 +3,7 @@ package lk.ijse.ManyToMany;
 import lk.ijse.ManyToMany.embedd.Name_Identifier;
 //import entity.CustomerOld;
 import lk.ijse.ManyToMany.entity.Customer;
+import lk.ijse.ManyToMany.entity.Order;
 import lk.ijse.ManyToMany.repository.CustomerRepository;
 import lk.ijse.OneToMany.config.SessionFactoryConfig;
 import org.hibernate.Session;
@@ -104,16 +105,26 @@ public class AppIntializer {
         customerRepository1.updateCustomer(customer);*/
 
 
+//
+//        CustomerRepository customerRepository = new CustomerRepository();
+//        customerRepository.getAllCustomerNative();
+//
+//        customerRepository = new CustomerRepository();
+//        List<Customer> allCustomerJPQL = customerRepository.getAllCustomerJPQL();
+//        for (Customer customer : allCustomerJPQL) {
+//            System.out.println(customer);
+//        }
+
+        //get Orders by cus_id
 
         CustomerRepository customerRepository = new CustomerRepository();
-        customerRepository.getAllCustomerNative();
+        List<Order> orderList = customerRepository.getOrdersByCustomerID(1);
 
-        customerRepository = new CustomerRepository();
-        List<Customer> allCustomerJPQL = customerRepository.getAllCustomerJPQL();
-        for (Customer customer : allCustomerJPQL) {
-            System.out.println(customer);
+        for ( Order order : orderList) {
+
+            System.out.println(order);
+
         }
-
 
     }
 }

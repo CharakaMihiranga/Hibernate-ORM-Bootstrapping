@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="Many to many relationship">
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/GetVsLoad.java" afterDir="false" />
+    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="Get vs Load">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,7 +71,7 @@
     "project.structure.last.edited": "Libraries",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.24367817",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -192,7 +193,7 @@
       <workItem from="1708673880621" duration="375000" />
       <workItem from="1708776207873" duration="4064000" />
       <workItem from="1708781266255" duration="33000" />
-      <workItem from="1708830224348" duration="963000" />
+      <workItem from="1708830224348" duration="7519000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate with javafx crud completed">
       <option name="closed" value="true" />
@@ -258,7 +259,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708780258912</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Get vs Load">
+      <option name="closed" value="true" />
+      <created>1708831404712</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1708831404712</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -271,6 +280,7 @@
     <MESSAGE value="Hibernate-Database-Relationships" />
     <MESSAGE value="One to Many relationship" />
     <MESSAGE value="Many to many relationship" />
-    <option name="LAST_COMMIT_MESSAGE" value="Many to many relationship" />
+    <MESSAGE value="Get vs Load" />
+    <option name="LAST_COMMIT_MESSAGE" value="Get vs Load" />
   </component>
 </project>

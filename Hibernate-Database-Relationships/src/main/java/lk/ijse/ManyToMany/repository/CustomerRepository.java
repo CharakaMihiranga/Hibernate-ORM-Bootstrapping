@@ -3,6 +3,7 @@ package lk.ijse.ManyToMany.repository;
 //import entity.CustomerOld;
 import lk.ijse.ManyToMany.config.SessionFactoryConfig;
 import lk.ijse.ManyToMany.entity.Customer;
+import lk.ijse.ManyToMany.entity.Order;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -107,7 +108,6 @@ public class CustomerRepository {
     }
 
 
-
 //    public List<Customer> getAllCustomerJPQL() {
 //        String sql = "SELECT C FROM Customer AS C";
 //        Query query = session.createQuery(sql);
@@ -115,4 +115,25 @@ public class CustomerRepository {
 //        session.close();
 //        return list;
 //    }
+
+    //Join query with where clause
+    public List<Order> getOrdersByCustomerID(int cusId){
+
+        String sql = "SELECT O FROM Order AS O\n " +
+                "INNER JOIN Customer AS C ON O.customer.id = C.id\n" +
+                " WHERE O.customer.id = :cus_id ";
+
+        Query query = session.createQuery(sql);
+        query.setParameter("cus_id",cusId);
+        List list = query.list();
+        session.close();
+        return list;
+
+        //you can return order type -->
+//
+//        List<Order> orderList = query.list();
+//        session.close();
+//        return orderList;
+
+    }
 }
