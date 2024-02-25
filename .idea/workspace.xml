@@ -4,12 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="Get vs Load">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="get data by where clause">
       <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/hibernate.cfg.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/resources/hibernate.cfg.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/resources/hibernate.cfg.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -193,7 +190,7 @@
       <workItem from="1708673880621" duration="375000" />
       <workItem from="1708776207873" duration="4064000" />
       <workItem from="1708781266255" duration="33000" />
-      <workItem from="1708830224348" duration="7519000" />
+      <workItem from="1708830224348" duration="8366000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate with javafx crud completed">
       <option name="closed" value="true" />
@@ -267,7 +264,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708831404712</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="get data by where clause">
+      <option name="closed" value="true" />
+      <created>1708839431699</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1708839431699</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +286,7 @@
     <MESSAGE value="One to Many relationship" />
     <MESSAGE value="Many to many relationship" />
     <MESSAGE value="Get vs Load" />
-    <option name="LAST_COMMIT_MESSAGE" value="Get vs Load" />
+    <MESSAGE value="get data by where clause" />
+    <option name="LAST_COMMIT_MESSAGE" value="get data by where clause" />
   </component>
 </project>

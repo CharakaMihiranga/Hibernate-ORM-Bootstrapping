@@ -115,15 +115,25 @@ public class AppIntializer {
 //            System.out.println(customer);
 //        }
 
-        //get Orders by cus_id
+//        //get Orders by cus_id
+//
+//        CustomerRepository customerRepository = new CustomerRepository();
+//        List<Order> orderList = customerRepository.getOrdersByCustomerID(1);
+//
+//        for ( Order order : orderList) {
+//
+//            System.out.println(order);
+//
+//        }
 
+
+
+        //get all Customers using HQL Queries
         CustomerRepository customerRepository = new CustomerRepository();
-        List<Order> orderList = customerRepository.getOrdersByCustomerID(1);
+        List<Customer> customerHQL = customerRepository.getCustomerHQL();
 
-        for ( Order order : orderList) {
-
-            System.out.println(order);
-
+        for (Customer customer : customerHQL){
+            System.out.println(customer);
         }
 
     }

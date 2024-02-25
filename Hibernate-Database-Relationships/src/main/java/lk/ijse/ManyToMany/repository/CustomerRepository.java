@@ -117,14 +117,14 @@ public class CustomerRepository {
 //    }
 
     //Join query with where clause
-    public List<Order> getOrdersByCustomerID(int cusId){
+    public List<Order> getOrdersByCustomerID(int cusId) {
 
         String sql = "SELECT O FROM Order AS O\n " +
                 "INNER JOIN Customer AS C ON O.customer.id = C.id\n" +
                 " WHERE O.customer.id = :cus_id ";
 
         Query query = session.createQuery(sql);
-        query.setParameter("cus_id",cusId);
+        query.setParameter("cus_id", cusId);
         List list = query.list();
         session.close();
         return list;
@@ -134,6 +134,18 @@ public class CustomerRepository {
 //        List<Order> orderList = query.list();
 //        session.close();
 //        return orderList;
+    }
+
+        //get Customer using HQL Queries
+        public List<Customer> getCustomerHQL(){
+
+            String sql = "FROM Customer";
+            Query query = session.createQuery(sql);
+            List<Customer> list = query.list();
+            session.close();
+            return list;
 
     }
+
+
 }
