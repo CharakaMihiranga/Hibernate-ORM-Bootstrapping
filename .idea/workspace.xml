@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="get all customers using HQL Queries">
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/projection/CustomerProjection.java" afterDir="false" />
+    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="HQL Projection using constructor projection">
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/HibernateLifecycle/DetachedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/HibernateLifecycle/PersistantState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/HibernateLifecycle/RemovedState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/HibernateLifecycle/TransientState.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,10 +50,15 @@
     "Application.AppInitializer.executor": "Run",
     "Application.AppInitializerWrapper.executor": "Run",
     "Application.AppIntializer.executor": "Run",
+    "Application.DetachedState.executor": "Run",
     "Application.GetVsLoad.executor": "Run",
+    "Application.PersistantState.executor": "Run",
+    "Application.RemovedState.executor": "Run",
+    "Application.TransientState.executor": "Run",
     "Application.lk.ijse.AppInitializer.executor": "Run",
     "Application.lk.ijse.Hibernate.AppInitializer.executor": "Run",
     "Application.lk.ijse.ManyToMany.AppInitializer.executor": "Run",
+    "Application.lk.ijse.ManyToMany.HibernateLifecycle.TransientState.executor": "Run",
     "Application.lk.ijse.OneToMany.AppInitializer.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
@@ -97,13 +103,13 @@
       <recent name="lk.ijse.ManyToMany" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.AppIntializer">
-    <configuration name="AppInitializerWrapper" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lk.ijse.AppInitializerWrapper" />
-      <module name="Hibernate-with-javafx" />
+  <component name="RunManager" selected="Application.RemovedState">
+    <configuration name="DetachedState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.HibernateLifecycle.DetachedState" />
+      <module name="Hibernate-Database-Relationships" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lk.ijse.OneToMany.*" />
+          <option name="PATTERN" value="lk.ijse.ManyToMany.HibernateLifecycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -111,12 +117,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppIntializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.AppIntializer" />
+    <configuration name="PersistantState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.HibernateLifecycle.PersistantState" />
       <module name="Hibernate-Database-Relationships" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lk.ijse.ManyToMany.*" />
+          <option name="PATTERN" value="lk.ijse.ManyToMany.HibernateLifecycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -124,12 +130,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GetVsLoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.GetVsLoad" />
+    <configuration name="RemovedState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.HibernateLifecycle.RemovedState" />
       <module name="Hibernate-Database-Relationships" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lk.ijse.ManyToMany.*" />
+          <option name="PATTERN" value="lk.ijse.ManyToMany.HibernateLifecycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,12 +143,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lk.ijse.ManyToMany.AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.AppInitializer" />
+    <configuration name="TransientState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.HibernateLifecycle.TransientState" />
       <module name="Hibernate-Database-Relationships" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lk.ijse.ManyToMany.*" />
+          <option name="PATTERN" value="lk.ijse.HibernateLifecycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -150,12 +156,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lk.ijse.OneToMany.AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lk.ijse.OneToMany.AppInitializer" />
+    <configuration name="lk.ijse.ManyToMany.HibernateLifecycle.TransientState" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.HibernateLifecycle.TransientState" />
       <module name="Hibernate-Database-Relationships" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lk.ijse.OneToMany.*" />
+          <option name="PATTERN" value="lk.ijse.ManyToMany.HibernateLifecycle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -165,11 +171,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.AppIntializer" />
-        <item itemvalue="Application.GetVsLoad" />
-        <item itemvalue="Application.lk.ijse.OneToMany.AppInitializer" />
-        <item itemvalue="Application.lk.ijse.ManyToMany.AppInitializer" />
-        <item itemvalue="Application.AppInitializerWrapper" />
+        <item itemvalue="Application.RemovedState" />
+        <item itemvalue="Application.DetachedState" />
+        <item itemvalue="Application.PersistantState" />
+        <item itemvalue="Application.lk.ijse.ManyToMany.HibernateLifecycle.TransientState" />
+        <item itemvalue="Application.TransientState" />
       </list>
     </recent_temporary>
   </component>
@@ -192,7 +198,7 @@
       <workItem from="1708673880621" duration="375000" />
       <workItem from="1708776207873" duration="4064000" />
       <workItem from="1708781266255" duration="33000" />
-      <workItem from="1708830224348" duration="10088000" />
+      <workItem from="1708830224348" duration="16929000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate with javafx crud completed">
       <option name="closed" value="true" />
@@ -282,7 +288,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708840205963</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="HQL Projection using constructor projection">
+      <option name="closed" value="true" />
+      <created>1708842058595</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1708842058595</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,6 +312,18 @@
     <MESSAGE value="Get vs Load" />
     <MESSAGE value="get data by where clause" />
     <MESSAGE value="get all customers using HQL Queries" />
-    <option name="LAST_COMMIT_MESSAGE" value="get all customers using HQL Queries" />
+    <MESSAGE value="HQL Projection using constructor projection" />
+    <option name="LAST_COMMIT_MESSAGE" value="HQL Projection using constructor projection" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/HibernateLifecycle/TransientState.java</url>
+          <line>7</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
