@@ -4,6 +4,7 @@ import lk.ijse.ManyToMany.embedd.Name_Identifier;
 //import entity.CustomerOld;
 import lk.ijse.ManyToMany.entity.Customer;
 import lk.ijse.ManyToMany.entity.Order;
+import lk.ijse.ManyToMany.projection.CustomerProjection;
 import lk.ijse.ManyToMany.repository.CustomerRepository;
 import lk.ijse.OneToMany.config.SessionFactoryConfig;
 import org.hibernate.Session;
@@ -128,12 +129,21 @@ public class AppIntializer {
 
 
 
-        //get all Customers using HQL Queries
-        CustomerRepository customerRepository = new CustomerRepository();
-        List<Customer> customerHQL = customerRepository.getCustomerHQL();
+//        //get all Customers using HQL Queries
+//        CustomerRepository customerRepository = new CustomerRepository();
+//        List<Customer> customerHQL = customerRepository.getCustomerHQL();
+//
+//        for (Customer customer : customerHQL){
+//            System.out.println(customer);
+//        }
+//
 
-        for (Customer customer : customerHQL){
-            System.out.println(customer);
+        //HQL Projection using constructor projection
+        CustomerRepository customerRepository = new CustomerRepository();
+        List<CustomerProjection> customerProjectionList = customerRepository.getCustomerProjection();
+
+        for (CustomerProjection customerProjection : customerProjectionList){
+            System.out.println(customerProjection);
         }
 
     }

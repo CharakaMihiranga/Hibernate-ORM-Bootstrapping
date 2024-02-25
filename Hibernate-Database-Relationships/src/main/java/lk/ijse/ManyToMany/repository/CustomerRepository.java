@@ -4,6 +4,7 @@ package lk.ijse.ManyToMany.repository;
 import lk.ijse.ManyToMany.config.SessionFactoryConfig;
 import lk.ijse.ManyToMany.entity.Customer;
 import lk.ijse.ManyToMany.entity.Order;
+import lk.ijse.ManyToMany.projection.CustomerProjection;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
@@ -147,5 +148,20 @@ public class CustomerRepository {
 
     }
 
+
+    //HQL Projection(using new keyword(constructor projection--> constructor through data binding))
+    //Projection types --> constructor projection,interface projection(binding data to a interface//using when working with native SQL)
+   // when we are using the constructor projection we should provide the correct package name after the (new) keyword -->
+   //ex:--> "SELECT new lk.ijse.ManyToMany.projection.CustomerProjection";
+    public List<CustomerProjection> getCustomerProjection(){
+        String sql = "SELECT\n"+
+                "new lk.ijse.ManyToMany.projection.CustomerProjection(C.id,C.name)\n"+
+                "FROM Customer As C";
+        Query query = session.createQuery(sql);
+        List list = query.list();
+        session.close();
+
+        return list;
+    }
 
 }

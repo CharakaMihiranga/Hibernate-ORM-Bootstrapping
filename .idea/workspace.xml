@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="get data by where clause">
+    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="get all customers using HQL Queries">
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/projection/CustomerProjection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" afterDir="false" />
     </list>
@@ -190,7 +192,7 @@
       <workItem from="1708673880621" duration="375000" />
       <workItem from="1708776207873" duration="4064000" />
       <workItem from="1708781266255" duration="33000" />
-      <workItem from="1708830224348" duration="8366000" />
+      <workItem from="1708830224348" duration="10088000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate with javafx crud completed">
       <option name="closed" value="true" />
@@ -272,7 +274,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708839431699</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="get all customers using HQL Queries">
+      <option name="closed" value="true" />
+      <created>1708840205963</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1708840205963</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,6 +297,7 @@
     <MESSAGE value="Many to many relationship" />
     <MESSAGE value="Get vs Load" />
     <MESSAGE value="get data by where clause" />
-    <option name="LAST_COMMIT_MESSAGE" value="get data by where clause" />
+    <MESSAGE value="get all customers using HQL Queries" />
+    <option name="LAST_COMMIT_MESSAGE" value="get all customers using HQL Queries" />
   </component>
 </project>
