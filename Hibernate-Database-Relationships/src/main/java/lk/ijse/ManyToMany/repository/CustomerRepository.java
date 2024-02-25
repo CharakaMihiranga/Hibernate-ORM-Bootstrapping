@@ -1,11 +1,15 @@
 package lk.ijse.ManyToMany.repository;
 
+//import entity.CustomerOld;
 import lk.ijse.ManyToMany.config.SessionFactoryConfig;
 import lk.ijse.ManyToMany.entity.Customer;
-//import entity.CustomerOld;
 import org.hibernate.HibernateException;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
+import org.hibernate.query.NativeQuery;
+import org.hibernate.query.Query;
+
+import java.util.List;
 
 public class CustomerRepository {
     private final  Session session;
@@ -17,16 +21,14 @@ public class CustomerRepository {
     public int saveCustomer(Customer customer){
         Transaction transaction=session.beginTransaction();
         try {
-
             int customerId = (int) session.save(customer);
             transaction.commit();
             session.close();
             return customerId;
-
         } catch (HibernateException e) {
-          transaction.rollback();
-          session.close();
-          e.printStackTrace();
+            transaction.rollback();
+            session.close();
+            e.printStackTrace();    ///apu error eka balaganna
             return -1;
         }
     }
@@ -43,7 +45,6 @@ public class CustomerRepository {
         }
 
     }
-
 
     public boolean updateCustomer(Customer customer){
         Transaction transaction=session.beginTransaction();
@@ -71,4 +72,47 @@ public class CustomerRepository {
             throw e;
         }
     }
+
+    public List<Customer> getAllCustomer(){
+        String sql="SELECT * FROM customer";
+        NativeQuery query=session.createSQLQuery(sql);
+        List<Customer> list=query.list();
+        for (Customer customer:list){
+            System.out.println(customer);
+        }
+        session.close();
+        return list;
+    }
+
+    //Using JPQL Query
+    public List<Customer> getAllCustomerJPQL() {
+        String sql = "SELECT C FROM Customer AS C";
+        Query query = session.createQuery(sql);
+        List<Customer> list = query.list();
+        session.close();
+        return list;
+    }
+
+
+    //Using Native SQL Query
+    public List<Object[]> getAllCustomerNative() {
+        String sql = "SELECT * FROM customer";
+        NativeQuery query = session.createSQLQuery(sql);
+        List<Object[]> list = query.list();
+        for (Object customer : list) {
+            System.out.println(customer);
+        }
+        session.close();
+        return list;
+    }
+
+
+
+//    public List<Customer> getAllCustomerJPQL() {
+//        String sql = "SELECT C FROM Customer AS C";
+//        Query query = session.createQuery(sql);
+//        List<Customer> list = query.list();
+//        session.close();
+//        return list;
+//    }
 }

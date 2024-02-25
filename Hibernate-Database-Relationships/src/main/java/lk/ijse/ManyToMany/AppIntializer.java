@@ -8,18 +8,112 @@ import lk.ijse.OneToMany.config.SessionFactoryConfig;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
+import java.util.List;
+
 public class AppIntializer {
     public static void main(String[] args) {
 
-        try{
 
-            CustomerRepository customerRepository=new CustomerRepository();
-            customerRepository.saveCustomer(new Customer(1, "Charaka", "Deniyaya"));
+        //save customer
+        /*Session session= SessionFactoryConfig.getInstance().getSession();
+        Transaction transaction=session.beginTransaction();
+
+        MobileNumber homeNumber=new MobileNumber();
+        homeNumber.setTyp("home");
+        homeNumber.setMobileNo("0416547654");
+
+        MobileNumber handPhoneNumber=new MobileNumber();
+        handPhoneNumber.setTyp("handPhone");
+        handPhoneNumber.setMobileNo("0786547654");
+        CustomerOld customer = getCustomer();
+
+        List<MobileNumber> mobileNumbers=new ArrayList<>();
+        mobileNumbers.add(handPhoneNumber);
+        mobileNumbers.add(homeNumber);
+
+        customer.setMobile(mobileNumbers);
+
+        session.save(customer);
+        transaction.commit();
+        session.close();*/
 
 
-        } catch (Exception e) {
-            throw new RuntimeException(e);
+
+//        CustomerRepository customerRepository=new CustomerRepository();
+//        customerRepository.saveCustomer(new Customer(1, "Mahinda", "Madamulana"));
+//
+
+
+        //view
+//        Session getSession = SessionFactoryConfig.getInstance().getSession();
+//        CustomerOld existingCustomer = getSession.get(CustomerOld.class, 1);
+//        System.out.println(existingCustomer);
+//        getSession.close();
+
+
+       /* CustomerRepository customerRepository=new CustomerRepository();
+         ///get kiyanne search(meka)
+        System.out.println( customerRepository.getCustomer(1));*/
+
+
+
+        //delete CustomerOld
+
+//        Session deleteSession=SessionFactoryConfig
+//                .getInstance().getSession();
+//        Transaction deletetransaction=deleteSession.beginTransaction();
+//        CustomerOld deleteCustomer=deleteSession.get(CustomerOld.class,1);
+//        System.out.println("delete"+deleteCustomer);
+//        deleteSession.delete(deleteCustomer);
+//        deletetransaction.commit();
+//        deleteSession.close();
+
+//        customerRepository=new CustomerRepository();
+//        CustomerOld customer=customerRepository.getCustomer(1);
+//        customer.setAddress("matale");
+//        customerRepository.updateCustomer(customer);
+
+
+
+       /* CustomerRepository get = new CustomerRepository();
+        CustomerRepository delete = new CustomerRepository();
+        CustomerOld customer = get.getCustomer(1);
+        delete.deleteCustomer(customer);*/
+
+
+
+        //update
+//        Session updateSession = SessionFactoryConfig.getInstance().getSession();
+//        CustomerOld customer1 = updateSession.get(CustomerOld.class, 001);
+//        System.out.println("Existing CustomerOld : "+customer);
+//        Transaction updateTransaction = updateSession.beginTransaction();
+//        customer.setAddress("Colombo");
+//        updateTransaction.commit();
+//        updateSession.update(customer1);
+//        System.out.println("Updated CustomerOld : "+customer);
+//        updateSession.close();
+
+
+
+       /* CustomerRepository customerRepository = new CustomerRepository();
+
+        //update
+        CustomerRepository customerRepository1 = new CustomerRepository();
+        CustomerOld customer = customerRepository.getCustomer(1);
+        customer.setAddress("Calton Niwasa");
+        customerRepository1.updateCustomer(customer);*/
+
+
+
+        CustomerRepository customerRepository = new CustomerRepository();
+        customerRepository.getAllCustomerNative();
+
+        customerRepository = new CustomerRepository();
+        List<Customer> allCustomerJPQL = customerRepository.getAllCustomerJPQL();
+        for (Customer customer : allCustomerJPQL) {
+            System.out.println(customer);
         }
-    }
 
+
+    }
 }

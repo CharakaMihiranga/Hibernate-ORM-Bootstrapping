@@ -4,26 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="One to Many relationship">
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/config/SessionFactoryConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/embedd/MobileNumber.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/embedd/Name_Identifier.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/embedd/OrderDetailPK.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/entity/Customer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/entity/Item.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/entity/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/entity/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/hibernate.cfg.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="19f5a033-3bab-4ef0-b799-5dbdd1e5f359" name="Changes" comment="Many to many relationship">
+      <change afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/GetVsLoad.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Customer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Customer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Order.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/OneToMany/entity/Order.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Hibernate-ORM-Bootstrapping.iml" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-ORM-Bootstrapping.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/repository/CustomerRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -64,6 +49,7 @@
     "Application.AppInitializer.executor": "Run",
     "Application.AppInitializerWrapper.executor": "Run",
     "Application.AppIntializer.executor": "Run",
+    "Application.GetVsLoad.executor": "Run",
     "Application.lk.ijse.AppInitializer.executor": "Run",
     "Application.lk.ijse.Hibernate.AppInitializer.executor": "Run",
     "Application.lk.ijse.ManyToMany.AppInitializer.executor": "Run",
@@ -138,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="lk.ijse.Hibernate.AppInitializer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="lk.ijse.Hibernate.AppInitializer" />
-      <module name="Hibernate-Configuration" />
+    <configuration name="GetVsLoad" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="lk.ijse.ManyToMany.GetVsLoad" />
+      <module name="Hibernate-Database-Relationships" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lk.ijse.Hibernate.*" />
+          <option name="PATTERN" value="lk.ijse.ManyToMany.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -180,10 +166,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.AppIntializer" />
+        <item itemvalue="Application.GetVsLoad" />
         <item itemvalue="Application.lk.ijse.OneToMany.AppInitializer" />
         <item itemvalue="Application.lk.ijse.ManyToMany.AppInitializer" />
         <item itemvalue="Application.AppInitializerWrapper" />
-        <item itemvalue="Application.lk.ijse.Hibernate.AppInitializer" />
       </list>
     </recent_temporary>
   </component>
@@ -204,7 +190,9 @@
       <workItem from="1708226239481" duration="18354000" />
       <workItem from="1708248015445" duration="1486000" />
       <workItem from="1708673880621" duration="375000" />
-      <workItem from="1708776207873" duration="4002000" />
+      <workItem from="1708776207873" duration="4064000" />
+      <workItem from="1708781266255" duration="33000" />
+      <workItem from="1708830224348" duration="963000" />
     </task>
     <task id="LOCAL-00001" summary="Hibernate with javafx crud completed">
       <option name="closed" value="true" />
@@ -262,7 +250,15 @@
       <option name="project" value="LOCAL" />
       <updated>1708244926350</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Many to many relationship">
+      <option name="closed" value="true" />
+      <created>1708780258912</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1708780258912</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -274,17 +270,7 @@
     <MESSAGE value="Create session Factory object using Configuration" />
     <MESSAGE value="Hibernate-Database-Relationships" />
     <MESSAGE value="One to Many relationship" />
-    <option name="LAST_COMMIT_MESSAGE" value="One to Many relationship" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/Hibernate-Database-Relationships/src/main/java/lk/ijse/ManyToMany/AppIntializer.java</url>
-          <line>15</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="Many to many relationship" />
+    <option name="LAST_COMMIT_MESSAGE" value="Many to many relationship" />
   </component>
 </project>
